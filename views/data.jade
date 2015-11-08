@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 What is the population of Singapore since the beginning of time?
+  table(width="300px" style="text-align:center")
+    tr(style="font-weight:600")
+      td Year
+      td Population
+    for d in data
+      tr
+        td #{d.year}
+        td(id="population") #{d.total_population}
