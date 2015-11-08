@@ -2,6 +2,8 @@ extends layout
 
 block content
   p The population of Singapore in 
-    b #{data.year} 
+    span 
+      b #{data.year} 
     span was 
-    b #{data.total_population}
+    span(id="population") 
+      b #{data.total_population}
